@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata\a");
+.picture {
+  background-image: url("../assets/images/foodpic.jpg");
+  background-size: cover;
+  height: 100vh;
+  z-index: 1; }
+
+.container {
+  padding: 8% 0 0;
+  width: 400px;
+  margin-left: 65vh;
+  position: relative; }
+  .container .form {
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+    margin: 0 auto 100px;
+    margin-top: 50px;
+    padding: 45px;
+    background: #FFFFFF; }
+
+.form input {
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  outline: 0;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #F5F5F5; }
+  .form input ::placeholder {
+    color: #90A4AE; }
+
+.form label {
+  font-weight: 600; }
+
+.form .btn {
+  font-size: 15px;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  background: #ce3635;
+  color: #FAFAFA;
+  text-transform: uppercase; }
+
+.form .message {
+  color: #90A4AE;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; }
+  .form .message a {
+    text-decoration: none;
+    color: #00BFA5; }
+
+.form .register-form {
+  display: none; }
+
+.bg-blur {
+  background: rgba(0, 0, 0, 0.1); }
+
+.adm-container {
+  margin-top: 160px;
+  margin-left: 9px;
+  height: 75vh;
+  width: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  position: fixed;
+  text-align: justify; }
+  .adm-container .adm-mid-layer .adm-table table {
+    width: 98%;
+    border: collapse;
+    border: 1px solid  #FFFFFF; }
+    .adm-container .adm-mid-layer .adm-table table th, .adm-container .adm-mid-layer .adm-table table tr {
+      border: 1px solid #ddd;
+      padding: 10px; }
+    .adm-container .adm-mid-layer .adm-table table td {
+      padding: 10px; }
+    .adm-container .adm-mid-layer .adm-table table tr:nth-child(odd) {
+      background-color: #FFFFFF; }
+    .adm-container .adm-mid-layer .adm-table table tr:nth-child(even) {
+      background-color: #f2f2f2; }
+    .adm-container .adm-mid-layer .adm-table table tr:hover {
+      background-color: #ddd; }
+    .adm-container .adm-mid-layer .adm-table table th {
+      background-color: #ce3635;
+      text-align: left;
+      color: #FFFFFF;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .adm-container .adm-mid-layer .adm-table .btn-class {
+    margin-left: 1230px;
+    margin-bottom: 10px; }
+    .adm-container .adm-mid-layer .adm-table .btn-class .fod-add-btn {
+      padding: 9px;
+      background-color: #ce3635;
+      width: 200px;
+      border-radius: 30px;
+      color: #ffffff; }
+
+.date {
+  float: left;
+  display: flex;
+  padding: 20px; }
+  .date div {
+    padding-right: 40px;
+    font-size: 19px;
+    font-weight: 600; }
+    .date div input {
+      padding: 6px;
+      border-radius: 5px;
+      margin-left: 10px; }
+  .date #filter {
+    color: #373334;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600; }
+
+body {
+  background: #f3f3f3; }
+
+.user-container {
+  background-image: url("../assets/images/userBackground.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: 9px; }
+  .user-container .cart {
+    margin-left: 94%;
+    padding-top: 90px;
+    z-index: 10;
+    visibility: visible; }
+    .user-container .cart .dot {
+      position: absolute;
+      right: 117px;
+      top: 110px;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      display: flex;
+      background-color: #ce3635;
+      text-align: right;
+      color: white;
+      font-size: medium;
+      justify-content: center; }
+    .user-container .cart .cart-button {
+      height: 45px;
+      width: 45px;
+      border-radius: 30px;
+      background-color: #ffffff;
+      text-align: center; }
+  .user-container .category-bar {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    .user-container .category-bar button {
+      border: none;
+      margin: 20px;
+      font-size: 30px;
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 25px;
+      background-color: transparent;
+      color: #ce3635;
+      border-radius: 5px; }
+  .user-container .food-container {
+    margin: 30px;
+    margin-top: 20px;
+    overflow-x: scroll; }
+    .user-container .food-container li {
+      list-style-type: none;
+      display: inline-block;
+      border-radius: 10px;
+      border: 3px solid #e5e6e8;
+      max-height: 700px;
+      max-width: 400px;
+      background-color: #ffffff;
+      margin-right: 18px;
+      margin-bottom: 50px; }
+    .user-container .food-container .img-container {
+      max-height: 200px;
+      max-width: 300px;
+      overflow: hidden;
+      min-width: 300px;
+      min-height: 200px;
+      margin: 10px;
+      border-radius: 10px; }
+    .user-container .food-container .item-desc {
+      max-width: 300px;
+      height: 100px;
+      overflow-x: hidden;
+      text-align: justify;
+      margin-left: 8px;
+      margin-right: 8px; }
+    .user-container .food-container footer h4 {
+      float: left;
+      padding: 5px;
+      color: #32765b;
+      margin-right: 10px; }
+    .user-container .food-container footer .fod-input {
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      padding: 0px;
+      margin-left: 10px;
+      margin-top: 30px;
+      width: 40px; }
+    .user-container .food-container footer button {
+      padding: 5px;
+      background-color: #ce3635;
+      border-radius: 15px;
+      color: #ffffff; }
+  .user-container .cart-open {
+    background-color: #ffffff;
+    position: fixed;
+    top: 78px;
+    right: 0px;
+    width: 350px;
+    height: 75%;
+    margin-right: 15px;
+    margin-top: 90px;
+    border-radius: 10px; }
+    .user-container .cart-open #close-button {
+      margin-left: 323px;
+      margin-top: -10px;
+      height: 35px;
+      width: 35px; }
+    .user-container .cart-open h4 {
+      color: #ce3635;
+      font-size: 20px;
+      margin: -10px 10px 10px 10px; }
+    .user-container .cart-open table {
+      width: 100%; }
+      .user-container .cart-open table tr {
+        text-align: center; }
+      .user-container .cart-open table tr:nth-child(odd) {
+        background-color: #f8f8f9; }
+    .user-container .cart-open .bottom-row {
+      align-items: center;
+      justify-content: center; }
+      .user-container .cart-open .bottom-row #grand-sum {
+        background-color: #f8f8f9;
+        height: 40px;
+        width: 94%;
+        color: #32765b;
+        float: right;
+        font-size: 20px;
+        font-weight: 20px;
+        border: 5px solid #ffffff;
+        border-radius: 2px;
+        padding-top: 12px;
+        text-align: center; }
+      .user-container .cart-open .bottom-row button {
+        border: 1;
+        margin: 20px;
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
+        background-color: #ce3635;
+        color: #ffffff;
+        border-radius: 5px; }
+      .user-container .cart-open .bottom-row button:hover {
+        background-color: #950202ba; }
+
+.color-head {
+  color: #ffffff !important;
+  background-color: #ce3635 !important; }
+
+.zod-contracts-body .zod-contract-header {
+  background-color: #373334;
+  height: 70px;
+  width: calc(100% - 25px);
+  position: fixed;
+  z-index: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px; }
+  .zod-contracts-body .zod-contract-header ._heading {
+    font-weight: 540;
+    font-size: 26px;
+    padding-top: 18px;
+    padding-left: 14px; }
+  .zod-contracts-body .zod-contract-header ._title {
+    float: left;
+    color: whitesmoke; }
+  .zod-contracts-body .zod-contract-header .next {
+    margin-left: 5px;
+    color: #ce3635; }
+
+body {
+  background-color: #eeeeee;
+  font-family: "Literate"; }
+
+.btn-arrange {
+  display: flex;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px; }
+  .btn-arrange .btn {
+    font-size: 14px;
+    padding: 8px;
+    background: #ce3635;
+    width: 120px;
+    z-index: 10;
+    border-radius: 35px;
+    margin-left: 20px;
+    display: inline-flex;
+    visibility: visible;
+    color: #FAFAFA;
+    text-align: center; }
+
+/*# sourceMappingURL=sample.css.map */
